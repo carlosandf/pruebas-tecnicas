@@ -7,9 +7,8 @@ import { config } from '../solutions/dotenv.js'
 describe('1. dotenv', () => {
   beforeEach(() => {
     // clean process.env
-    for (const key of Object.keys(process.env)) {
-      delete process.env[key]
-    }
+    delete process.env.TOKEN
+    delete process.env.PORT
   })
 
   afterEach(() => {
@@ -55,3 +54,5 @@ describe('1. dotenv', () => {
     }
   })
 })
+
+console.log(process.env);
