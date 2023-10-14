@@ -54,5 +54,3 @@ describe('1. dotenv', () => {
     }
   })
 })
-
-console.log(process.env);
