@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 
 const hasQuotes = (string = '') => {
-  const hasSingleQuotes = string.startsWith('"') && string.endsWith('"');
-  const hasDoubleQuotes = string.startsWith("'") && string.endsWith("'");
+  const hasSingleQuotes = string.startsWith("'") && string.endsWith("'");
+  const hasDoubleQuotes = string.startsWith('"') && string.endsWith('"');
   if (hasSingleQuotes || hasDoubleQuotes) {
     return true;
   }
